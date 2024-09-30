@@ -10,3 +10,4 @@ temp_file_path = '/tmp/keep_for_restore'
 `cp #{file} #{temp_file_path}`
 `git reset --hard #{commit_hash}`
 `cp #{temp_file_path} #{file}`
+`rm #{temp_file_path}`
